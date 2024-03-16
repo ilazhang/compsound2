@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    
+        <title>Synthesis</title>
+    </head>
+    <body>
+        <h1>Synthesis</h1>
+        <p>Press the keys on your keyboard to play musical notes!</p>
+        <br>
+        <label for="waveformChoice">Waveform:</label>
+        <select id="waveformChoice">
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+            <option value="triangle">Triangle</option>
+        </select>
+        <br>
+        <label>
+            <input type="checkbox" id="additiveCheckbox"> Additive Synthesis
+        </label>
+        <br>
+        <label for="numPartialsSlider">Number of Partials:</label>
+        <br>
+        <input type="range" min="0" max="5" value="3" class="slider" id="numPartialsSlider">
+        <br>
+        <input type="checkbox" id="amCheckBox">
+        <label for="amCheckBox">AM Synthesis</label>
+        <br>
+        <label for="amFrequencySlider">AM Frequency:</label>
+        <br>
+        <input type="range" id="amFrequencySlider" min="20" max="1000" value="100" step="1">
+        <br>
+        <input type="checkbox" id="fmCheckBox">
+        <label for="fmCheckBox">FM Synthesis</label>
+        <br>
+        <label for="fmFrequencySlider">FM Frequency:</label>
+        <br>
+        <input type="range" id="fmFrequencySlider" min="20" max="1000" value="100" step="1">
+        <br>
+        <input type="checkbox" id="lfoCheckBox">
+        <label for="lfoCheckBox">LFO</label>
+        <br>
+        <div class="table-container">
+        <div>
+        <h2>First Octave</h2>
+        <table>
+            <tr>
+                <th>Note</th>
+                <th>Key</th>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Z</td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>D#</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F#</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>G#</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>A#</td>
+                <td>J</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>M</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Second Octave</h2>
+        <table>
+            <tr>
+                <th>Note</th>
+                <th>Key</th>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Q</td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>W</td>
+            </tr>
+            <tr>
+                <td>D#</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>F#</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>G#</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Y</td>
+            </tr>
+            <tr>
+                <td>A#</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>U</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+        <script src="synth6.js"></script>
+</body>
+</html>
